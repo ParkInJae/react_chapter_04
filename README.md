@@ -1,3 +1,4 @@
+
 # gitHub 와 VSCode 연결
   
 ![alt text](image.png)
@@ -32,5 +33,6 @@ git config --global core.autocrlf true
 
 2. macOS/Linux 환경 
 git config --global core.autocrlf input
+
 
 
