@@ -50,6 +50,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 누군가(혹은 본인이 다른 환경에서) 원격 저장소에 먼저 커밋을 올렸고,
 로컬 저장소가 그 커밋들을 받아오지 않은 상태에서 push를 하려고 할 때
 Git이 “로컬이 원격보다 뒤처져 있으니, 원격 저장소에 있는 변경 사항부터 먼저 합치라”고 경고하는 것입니다.
+
 2. 해결 방법
 (1) 원격 변경 사항을 먼저 가져와서 병합(merge)하거나 리베이스(rebase)
 원격 저장소 변경사항 받아오기
@@ -85,6 +86,7 @@ bash
 git push origin master --force
 하지만 이렇게 하면 원격 저장소에 있던 커밋들이 사라질 수 있고, 협업 중이라면 다른 사람들의 작업 이력이 날아가거나 이력이 꼬여버리는 심각한 문제가 생길 수 있습니다.
 따라서, 개인 저장소에서 내 로컬 이력만 남기고 싶을 때 또는 원격 변경 내역이 필요 없을 때만 제한적으로 사용하세요.
+
 3. 정리
 non-fast-forward 오류는 원격에 더 새로운 커밋이 있어, 로컬 브랜치가 뒤처졌을 때 발생합니다.
 가장 일반적인 해결책은 git pull origin master(또는 git pull --rebase origin master)로 원격 저장소의 변경을 받아와서 충돌을 해결한 후, 다시 git push origin master를 수행하는 것입니다.
