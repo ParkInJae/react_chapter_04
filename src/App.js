@@ -4,9 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      
-      </header>
+      chapter_04 시계 만들기 <br/>
     </div>
   );
 }

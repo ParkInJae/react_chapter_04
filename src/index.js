@@ -11,6 +11,7 @@ setInterval(()=>{ // setInterval() >>  매 밀리초마다 실행되는 function
   // 매 밀리초마다 Clock을 불러서 시간을 볼 수 있다. 
   root.render(
     <React.StrictMode>
+      <App/>
       <Clock />
     </React.StrictMode>
   );
